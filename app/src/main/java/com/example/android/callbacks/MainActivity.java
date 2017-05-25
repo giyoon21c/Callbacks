@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BlankFragment.OnFragmentInteractionListener {
 
     private ScrollView mScroll;
     private TextView mLog;
@@ -68,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         displayMessage("onResume");
+    }
+
+    @Override
+    public void onFragmentInteraction() {
+        ActivityHelper.log(this, mLog, "Fragment button pressed!", true);
     }
 
 }

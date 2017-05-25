@@ -39,6 +39,14 @@
             android:layout_weight="1"
             android:text="Run code" />
 
+
+        <fragment
+            android:id="@+id/myFragment"
+            android:name="com.example.android.callbacks.BlankFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
         <Button
             android:id="@+id/btnClear"
             android:layout_width="0dp"
