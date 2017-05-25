@@ -33,7 +33,7 @@ public class BlankFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_blank, container, false);
         View fragmentView = inflater.inflate(R.layout.fragment_blank, container, false);
         // create event handler for the fragment button
-        Button button = fragmentView.findViewById(R.id.button);
+        Button button = (Button) fragmentView.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

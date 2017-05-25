@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity implements BlankFragment.OnF
 
     @Override
     public void onFragmentInteraction() {
-        ActivityHelper.log(this, mLog, "Fragment button pressed!", true);
+        //ActivityHelper.log(this, mLog, "Fragment button pressed!", true);
+        displayMessage("Fragment button pressed!");
     }
 
 }
